@@ -11,21 +11,25 @@ const Banner = () => {
       id: 1,
       icon: faCartShopping,
       description: "Compra simples e segura",
+      backgroundColor: '#c47f17'
     },
     {
       id: 2,
       icon: faBoxesPacking,
       description: "Embalagem mantém o café intacto",
+      backgroundColor: '#574f4d'
     },
     {
       id: 3,
       icon: faStopwatch,
       description: "Entrega rápida e rastreada",
+      backgroundColor: '#dbac2c'
     },
     {
       id: 4,
       icon: faMugHot,
       description: "O café chega fresquinho até você",
+      backgroundColor: '#8047f8'
     },
   ];
   return (
@@ -43,8 +47,9 @@ const Banner = () => {
                 key={feature.id}
                 id={feature.id}
                 description={feature.description}
+                backgroundColor = {feature.backgroundColor}
               >
-                <FontAwesomeIcon icon={feature.icon} />
+                <FontAwesomeIcon icon={feature.icon} color='#ffffff'/>
               </Feature>
             ))}
           </div>

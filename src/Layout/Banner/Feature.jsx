@@ -1,11 +1,9 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import classes from './Feature.module.css'
 const Feature = (props) => {
   return (
     <div className={classes['feature']}>
-        <div>{props.children}</div>
-        <FontAwesomeIcon icon="fa-solid fa-mug-hot" />
-        <div>{props.description}</div>
+        <div className={classes['feature-icon']} style={{background:props.backgroundColor}}>{props.children}</div>
+        <div className={classes['feature-description']}>{props.description}</div>
     </div>
   )
 }

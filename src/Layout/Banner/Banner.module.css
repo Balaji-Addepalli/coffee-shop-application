@@ -3,15 +3,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(250, 249, 252,0.5);
 }
 .banner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 68rem;
-  margin: 0 1rem;
+  max-width: 70rem;
+  margin: 1rem;
 }
 
+.banner-section{
+  width:100%
+}
 .banner-section h1 {
   margin: 1rem 0;
   font-size: 3rem;
@@ -35,9 +39,14 @@
     margin-top:4.125rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 }
 @media only screen and (max-width: 768px) {
   .banner {
     flex-direction: column-reverse;
+  }
+  .banner-features{
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
